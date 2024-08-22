@@ -1,0 +1,58 @@
+.cart {
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+    }
+    .col {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        .qnt {
+            display: flex;
+            gap: 10px;
+            .col1 {
+                color: red;
+                &::after {
+                    content: "x";
+                }
+            }
+            .dq {
+                display: flex;
+                gap: 10px;
+                span {
+                    &:last-child {
+                        
+                    &::before {
+                        content: "$";
+                    }
+                }
+                }
+                .sp {
+                   font-weight: 100;
+                   display: flex;
+                   gap: 5px;
+                   span {
+                   &:last-child {
+                    &::before {
+                        content: "$";
+                    }
+                   }
+                }
+                }
+            }
+        }
+    }
+}
+}

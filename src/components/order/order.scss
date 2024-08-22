@@ -1,0 +1,64 @@
+.order {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    
+    .box {
+        width: 80%;
+        height: 80%;
+        background-color: white;
+        padding: 10px;
+        overflow: auto;
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+            .header {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                span {
+                    font-weight: 200;
+                }
+            }
+            .orders {
+                background-color: antiquewhite;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+                .bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    span {
+                        &:last-child {
+                            font-weight: bold;
+                            &::before {
+                                content: "$";
+                            }
+                        }
+                    }
+                }
+            }
+            button {
+                color: white;
+                background-color: red;
+                padding: 5px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
