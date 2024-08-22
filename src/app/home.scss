@@ -1,6 +1,16 @@
-.home {
-    display: grid;
-    grid-template-columns: 75% 25%;
-    gap: 5px;
-    margin: 10px;
+@media  screen and (max-width:768px) {
+    .home {
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 20px;
+    }
+    
+}
+@media  screen and (min-width:768px) {
+    .home {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        
+    }
+    
 }
